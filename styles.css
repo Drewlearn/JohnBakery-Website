@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.headerContainer{
+    background: rgb(214, 235, 212);
+    height: 600px;
+    max-height: 100%;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer nav{
+    display: flex;
+    column-gap: 30px;
+    margin-top: 20px;
+}
+
+.navContainer a{
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(38, 60, 72);
+}
+
+.myH1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color:  rgb(38, 60, 72);
+    text-shadow: 2px 2px 3px rgb(34, 60, 73);
+}
+
+.schedContainer{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1em;
+    color:  rgb(38, 60, 72);
+    text-shadow: 2px 2px 3px rgb(34, 60, 73);
+}
+
+.orderBtn{
+    display: flex;
+    justify-content: center ;
+    margin-top: 30px;
+}
+
+.orderBtn a{
+    text-decoration: none;
+    color: rgb(235, 223, 208);
+    font-size: 2em;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.orderBtn a:hover{
+    color: rgb(212, 165, 107);
+    font-size: 2.5em;
+}
+
+.order{
+ display: flex;
+ width: 150px;
+ height: 150px;
+ background: rgb(228, 115, 96);
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ border-radius: 50%;
+ padding: 20px;
+}
+
+.sectionContainer{
+
+}
+
+.sectionContainer .sampleTitle{
+    margin-top: 30px;
+}
+
+.sampleTitle{
+    text-align: center;
+    margin-top: 50px;
+    width: 250px;
+    height: 100px;
+    background: rgb(70, 128, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2em;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    color: rgb(235, 223, 208);
+    border-radius: 10px
+}
+
+.photoDesign{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.photoDesign .cakePic{
+    width: 200px;
+    height: 300px;
+    margin: 30px;
+    border: 1px solid rgb(61, 59, 59);
+    max-width: 100%;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(38, 60, 72);
+    padding: 10px;
+}
+
+.contactInfo .contactContainer{
+    width: 100px;
+    max-width: 100%;
+    text-align: center;
+    color: rgb(231, 206, 173);
+    margin-top: 10px;
+}
+
+.contactInfo .numberContainer{
+    color: rgb(231, 206, 173);
+}
+
+/*  FORM PAGE */
+
+.bodyForm{
+    background-color:rgb(241, 230, 159) ;
+}
+
+.headerContainer2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.headerContainer2 .myH12{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color:  rgb(38, 60, 72);
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 39.6px;
+    display: block;
+    margin: 30px;
+}
+
+.headerContainer2 .infoContainer{
+    font-size: 30px;
+    font-weight: 450;
+    color:  rgb(38, 60, 72);
+    margin: 35px;
+}
+
+.headerContainer2 h2{
+    margin: 30px;
+    font-size: 30px;
+    color:  rgb(38, 60, 72);
+}
+
+.formContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personalInfo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.personalInfo input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.cakeCustomization .cakeSize{
+  display: flex;
+  column-gap: 10px;
+}
+
+.cakeCustomization .cakeDesign{
+    margin-top:10px;
+}
+
+
+.cakeCustomization .cakeFlavor{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .cakeDesign textarea{
+    width: 300px;
+    max-width: 100%;
+}
+
+.cakeDeliver{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.submitBtn{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submitBtn button{
+    padding: 10px;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.submitBtn button:hover{
+    background-color: rgb(228, 203, 170);
+}
+
+.submitBtn button:active{
+    font-size: 35px;
+    background-color: #615858;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .navContainer a {
+        font-size: 1.5em; /* Smaller navigation text */
+    }
+
+    .order {
+        width: 30vw; /* Adjusts circle size for smaller screens */
+        height: 30vw;
+    }
+
+    .sampleTitle {
+        width: 80vw; /* Adjusts width for smaller screens */
+        height: 20vw;
+        font-size: 5vw; /* Increases font size */
+    }
+
+    .photoDesign .cakePic {
+        width: 45vw; /* Adjusts image size */
+        height: 65vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .myH1 {
+        font-size: 6vw; /* Larger text on smaller screens */
+    }
+
+    .schedContainer {
+        font-size: 3vw;
+    }
+
+    .orderBtn a {
+        font-size: 2vw;
+    }
+
+    .sampleTitle {
+        font-size: 6vw;
+    }
+
+    .photoDesign .cakePic {
+        display: flex;
+        width: 80vw;
+        height: 100vw;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Trick Fill-Up Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bodyForm">
+    <header class="headerContainer2">
+        <div class="myH12">
+            <h1>WE CATER</h1>
+        </div>    
+        <div class="infoContainer">
+            <p>We are happy to bake for your wedding, birthday, office party or any other occasion for which you need delicious cakes.</p>
+        </div>
+        <h2>FILL OUT THE FORM BELOW 👇</h2>
+    </header>
+    <div class="formContainer">
+        <form action="/submit"  method="POST">
+            <div class="personalInfo">
+                <label for="fName">First Name:</label>
+                <input type="text" placeholder="Juan" id="fName" name="fname" required>
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName" placeholder="Dela Cruz" name="lname" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="JuanCruz@gmail.com" required>
+                <label for="email">Contact #:</label>
+                <input type="tel" id="contactNum" name="contactNum" placeholder="0905455212" required>
+            </div>
+            <div class="cakeCustomization">
+              <div class="cakeSize">
+                <h3>Cake Size:</h3>
+                <label>6"</label>
+                <input type="radio" value="6-inch" name="cakesize" checked>
+                <label>9"</label>
+                <input type="radio" value="9-inch" name="cakesize">
+                <label>12"</label>
+                <input type="radio" value="12-inch" name="cakesize">
+             </div>
+             <div class="cakeFlavor">
+                <h3>Cake Flavor:</h3>
+                <label>Straberry</label>
+                <input type="checkbox" value="Straberry" name="cakeflavor">
+                <label>Ube</label>
+                <input type="checkbox" value="ube" name="cakeflavor">
+                <label>Chocolate</label>
+                <input type="checkbox" value="chocolate" name="cakeflavor">
+                <label>Vanilla</label>
+                <input type="checkbox" value="chocolate" name="cakeflavor">
+             </div>
+             <div class="cakeDesign">
+                <p>Please specify the type of design of your cake </p>
+                <textarea type="text"></textarea>
+             </div>
+             <div class="cakeDeliver">
+                <label>Deliver</label>
+                <input type="radio" value="Straberry" name="cakeflavor" checked>
+                <label>Pick-Up</label>
+                <input type="radio" value="ube" name="cakeflavor">
+             </div>
+             <div class="submitBtn">
+                <button type="reset" id="cancelBtn" value="cancelForm" >Cancel</button>
+                <button type="submit" name="action" value="submitForm" id="submitBtn">Submit</button>
+             </div>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
