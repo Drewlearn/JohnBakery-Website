@@ -215,6 +215,20 @@ body{
     margin-top: 10px;
   }
 
+.cakeLayer{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.cakeLayer label{
+    font-size: 20px;
+}
+
+.cakeLayer select{
+    padding: 2px;
+}
+
   .cakeDesign textarea{
     width: 300px;
     max-width: 100%;
