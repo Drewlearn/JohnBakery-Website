@@ -80,10 +80,6 @@ body{
  padding: 20px;
 }
 
-.sectionContainer{
-
-}
-
 .sectionContainer .sampleTitle{
     margin-top: 30px;
 }
@@ -197,6 +193,10 @@ body{
     font-size: 1em;
     width: 100%;
     background-color: #f9f9f9;
+}
+
+.personalInfo input:hover{
+    background-color: #f7f4f4;
 }
 
 .cakeCustomization .cakeSize{
