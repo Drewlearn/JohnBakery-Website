@@ -235,9 +235,13 @@ body{
 }
 
 .cakeDeliver{
-    margin-top: 10px;
-    display: flex;
+    margin-top: 15px;
+    display: block;
     column-gap: 10px;
+}
+
+.bulkOrder{
+    margin-top: 15px;
 }
 
 
